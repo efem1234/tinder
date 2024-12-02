@@ -1,6 +1,6 @@
 import { configureStore, createListenerMiddleware } from "@reduxjs/toolkit";
 
-import { createHealthListenerActions } from "./movies/movies.actions";
+import { createMoviesListenerActions } from "./movies/movies.actions";
 import { moviesReducer } from "./movies/movies.slice";
 
 export const listenerMiddleware = createListenerMiddleware();
@@ -17,4 +17,4 @@ export const store = configureStore({
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
-createHealthListenerActions();
+createMoviesListenerActions();

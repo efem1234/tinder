@@ -5,7 +5,6 @@ import { moviesActions } from "@store/movies/movies.slice";
 import { Navbar } from "@components/Navbar";
 import { GradingSection } from "@components/MainSection/MainSection.component";
 import { CircularProgress, Stack } from "@mui/material";
-import { RateStatus } from "@store/movies/movies.types";
 
 function App() {
   const dispatch = useDispatch();

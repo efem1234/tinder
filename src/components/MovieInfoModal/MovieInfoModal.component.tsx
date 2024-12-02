@@ -49,7 +49,7 @@ export const MovieInfoModal: React.FC<MovieInfoModalProps> = ({
             </Stack>
             <Stack>
               {likedMovies.map((movie, index) => (
-                <Typography variant="body2">
+                <Typography key={movie.id} variant="body2">
                   {index + 1}.{movie.title}
                 </Typography>
               ))}
@@ -67,7 +67,7 @@ export const MovieInfoModal: React.FC<MovieInfoModalProps> = ({
             </Stack>
             <Stack>
               {rejectedMovies.map((movie, index) => (
-                <Typography variant="body2">
+                <Typography key={movie.id} variant="body2">
                   {index + 1}.{movie.title}
                 </Typography>
               ))}
