@@ -8,8 +8,9 @@ import { MovieBigCard } from "@components/MovieBigCard";
 
 export const MoviesToRate: React.FC<MoviesToRateProps> = ({ movies }) => {
   const dispatch = useDispatch();
-  const currentMovie = movies[0];
-  const slicedMovies = movies.reverse();
+
+  const slicedMovies = movies;
+  const currentMovie = slicedMovies[slicedMovies.length - 1];
 
   const handleLike = useCallback((movieId: string) => {
     dispatch(moviesActions.likeMovie({ movieId }));
