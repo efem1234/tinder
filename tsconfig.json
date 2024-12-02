@@ -21,6 +21,7 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@components/*": ["./src/components/*"],
+      "@assets/*": ["./src/assets/*"],
       "@store/*": ["./src/store/*"],
       "@theme/*": ["./src/theme/*"]
     }
